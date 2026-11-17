@@ -1,61 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Programming</title>
     <style>
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            max-width: 600px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.6;
-            color: #222;
-        }
+      * {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        background-color: #f1f3f5;
+        color: #222222;
+        line-height: 1.6;
+      }
 
-        li {
-            margin-bottom: 10px;
-        }
+      main {
+        width: 100%;
+        max-width: 520px;
+        background-color: white;
+        border: 1px solid #dddddd;
+        border-radius: 12px;
+        box-shadow: 0px 2px 8px #cccccc;
+        padding: 50px 40px;
+        text-align: center;
+      }
 
-        a {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #0066cc;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 6px;
-        }
+      h1 {
+        font-size: 2rem;
+        color: #222222;
+        margin-bottom: 5px;
+      }
 
-        a:hover {
-            background-color: #004c99;
-        }
+      h2 {
+        font-size: 1rem;
+        font-weight: normal;
+        color: #777777;
+        margin-bottom: 35px;
+      }
 
-        ul {
-            display: flex;
-            gap: 10px;
-        }
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      a {
+        display: block;
+        background-color: #343a40;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 14px;
+        border-radius: 8px;
+      }
+
+      a:hover {
+        background-color: #212529;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <h1>Web Programming</h1>
-        <h2>Submissions</h2>
-        <nav aria-label="Weekly submissions">
-            <ul>
-                <li><a href="week1/week1.html">Week 1</a></li>
-                <li><a href="week2/week2.html">Week 2</a></li>
-                <li><a href="week3/week3.html">Week 3</a></li>
-            </ul>
-        </nav>
+      <h1>Web Programming</h1>
+      <h2>Submissions</h2>
+      <nav aria-label="Weekly submissions">
+        <ul>
+          <li><a href="week1/week1.html">Week 1</a></li>
+          <li><a href="week2/week2.html">Week 2</a></li>
+          <li><a href="week3/week3.html">Week 3</a></li>
+        </ul>
+      </nav>
     </main>
-</body>
-
+  </body>
 </html>

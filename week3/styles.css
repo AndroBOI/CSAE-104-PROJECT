@@ -76,10 +76,11 @@ form {
     align-items: center;
     gap: 20px;
 }
+
 label {
     font-size: 1.3rem;
     font-weight: bold;
-    
+
 
 }
 
@@ -93,7 +94,6 @@ textarea {
 
 
 .dmmmsu-image {
-    width: 350px;
     height: 500px;
     flex: 1;
 }

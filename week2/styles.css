@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f4f8;
+    color: #333;
+}
+
+.first-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 30px;
+    background-color: white;
+    border-bottom: 2px solid #dce3ec;
+}
+
+.university-short {
+    color: #173d75;
+    font-size: 28px;
+}
+
+.university-name {
+    color: #173d75;
+    font-size: 22px;
+    text-align: right;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+}
+
+.main-content {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 20px;
+}
+
+.navigation {
+    background-color: #173d75;
+    padding: 20px 15px;
+    border-radius: 6px;
+}
+
+.paths {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.paths a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.paths a:hover {
+    color: #c9dcff;
+    text-decoration: underline;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 350px;
+    gap: 20px;
+    align-items: start;
+}
+
+.middle-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #dce3ec;
+    border-radius: 6px;
+}
+
+.section-title {
+    color: #173d75;
+    font-size: 26px;
+    border-bottom: 2px solid #dce3ec;
+    padding-bottom: 12px;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.paragraph {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.dmmmsu-image {
+    width: 45%;
+    max-width: 350px;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dce3ec;
+    border-radius: 6px;
+}
+
+.form-title {
+    color: #173d75;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd3df;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+.btn {
+    padding: 12px;
+    background-color: #218838;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #196c2c;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #e5eaf1;
+    border-top: 1px solid #dce3ec;
+}
+
+.footer {
+    color: #173d75;
+    font-size: 18px;
+}

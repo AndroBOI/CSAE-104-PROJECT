@@ -465,3 +465,152 @@ footer {
   font-size: 0.8rem;
   padding: 14px;
 }
+
+@media (max-width: 768px) {
+  .hero-text,
+  .hero-image,
+  .notice-list,
+  .sidebar,
+  form,
+  .about-text {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero-content {
+    gap: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .two-columns {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-content {
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  nav a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 12px 4px;
+    border-right: 1px solid #8f3a3a;
+  }
+
+  nav a:last-child {
+    border-right: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar-content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header-content {
+    gap: 12px;
+  }
+
+  .logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .school-name {
+    font-size: 1.4rem;
+  }
+
+  .school-place {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-buttons .btn {
+    flex: 1 1 100%;
+  }
+
+  .page-banner {
+    padding: 30px 0;
+  }
+
+  .page-banner h1 {
+    font-size: 1.7rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .quick-links-content {
+    border-left: none;
+  }
+
+  .quick-card {
+    flex: 1 1 100%;
+    min-width: 0;
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .notice {
+    gap: 15px;
+  }
+
+  .notice-date {
+    width: 45px;
+    padding-right: 15px;
+  }
+
+  .day {
+    font-size: 1.5rem;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  .side-box {
+    padding: 16px;
+  }
+
+  .footer-content {
+    gap: 25px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+
+  .footer-box {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  nav a {
+    font-size: 0.7rem;
+    padding: 10px 2px;
+  }
+}

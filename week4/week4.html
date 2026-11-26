@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | University of Luzon Notice Board</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+
+  <body>
+    <!-- Splash Screen -->
+    <section id="splash" class="screen">
+      <h1 class="logo">MyApp</h1>
+      <div class="loader"></div>
+    </section>
+
+    <!-- Main Notice Board Website (Hidden during splash) -->
+    <div id="mainSite" class="hidden">
+      <div class="top-bar">
+        <div class="container top-bar-content">
+          <p>University of Luzon, Dagupan City</p>
+          <p>
+            Official Campus Notice Board |
+            <a id="authNavLink" href="signin.html?screen=login" style="color: inherit; font-weight: bold; text-decoration: underline;">Sign In</a>
+          </p>
+        </div>
+      </div>
+
+      <header>
+        <div class="container header-content">
+          <img class="logo" src="images/ul-logo.png" alt="University of Luzon logo" />
+          <div>
+            <p class="school-name">University of Luzon</p>
+            <p class="school-place">Dagupan City</p>
+          </div>
+        </div>
+      </header>
+
+      <nav>
+        <div class="container nav-content">
+          <a class="active" href="week3.html">Home</a>
+          <a href="notices.html">Notices</a>
+          <a href="post-notice.html">Post Notice</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <p class="small-title">Campus Notice Board</p>
+            <h1>Stay informed. Stay connected.</h1>
+            <p class="hero-paragraph">
+              Read the latest announcements and post notices for students,
+              faculty, and staff, all in one place.
+            </p>
+            <div class="hero-buttons">
+              <a class="btn" href="notices.html">Read Notices</a>
+              <a class="btn btn-light" href="post-notice.html">Post a Notice</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img class="campus-image" src="images/ul-campus.jpg" alt="University of Luzon campus" />
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-links">
+        <div class="container quick-links-content">
+          <a class="quick-card" href="notices.html">
+            <h3>Latest Notices</h3>
+            <p>See what is new on campus.</p>
+          </a>
+          <a class="quick-card" href="post-notice.html">
+            <h3>Post a Notice</h3>
+            <p>Share an announcement.</p>
+          </a>
+          <a class="quick-card" href="about.html">
+            <h3>About</h3>
+            <p>Learn about this board.</p>
+          </a>
+          <a class="quick-card" href="contact.html">
+            <h3>Contact</h3>
+            <p>Get in touch with us.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Recent Notices</h2>
+
+          <div class="notice-list">
+            <div class="notice">
+              <div class="notice-date">
+                <span class="day">25</span>
+                <span class="month">Nov</span>
+              </div>
+              <div class="notice-info">
+                <span class="tag">General</span>
+                <h3>General Announcement</h3>
+                <p>This is a sample notice. Posted announcements will appear here with their title, category, and date.</p>
+              </div>
+            </div>
+
+            <div class="notice">
+              <div class="notice-date">
+                <span class="day">24</span>
+                <span class="month">Nov</span>
+              </div>
+              <div class="notice-info">
+                <span class="tag">Academics</span>
+                <h3>Academic Reminder</h3>
+                <p>This is a sample notice. Students are advised to check their department for official updates.</p>
+              </div>
+            </div>
+
+            <div class="notice">
+              <div class="notice-date">
+                <span class="day">23</span>
+                <span class="month">Nov</span>
+              </div>
+              <div class="notice-info">
+                <span class="tag">Events</span>
+                <h3>Campus Activity Update</h3>
+                <p>This is a sample notice. Information about campus activities will be shared here.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="center">
+            <a class="btn" href="notices.html">View All Notices</a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container footer-content">
+          <div class="footer-box">
+            <h3>University of Luzon</h3>
+            <p>Dagupan City</p>
+            <p>Campus Notice Board</p>
+          </div>
+          <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="week3.html">Home</a>
+            <a href="notices.html">Notices</a>
+            <a href="post-notice.html">Post Notice</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="footer-box">
+            <h3>Contact</h3>
+            <p>info@example.com</p>
+            <p>(000) 000-0000</p>
+          </div>
+        </div>
+        <div class="copyright">&copy; 2027 University of Luzon, Dagupan City. All Rights Reserved.</div>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

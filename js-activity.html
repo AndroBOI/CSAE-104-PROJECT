@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card {
+            background: white;
+            padding: 28px 36px;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
+            text-align: center;
+            width: fit-content;
+        }
+
+        .card1 {
+            background: blue;
+        }
+
+        .card2 {
+            background: red;
+        }
+
+        .card3 {
+            background: yellow;
+        }
+
+        h2 {
+            cursor: pointer;
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            background: green;
+            color: white;
+            padding: 10px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card" id="box1">
+        <h2 id="h2-1">Change Background</h2>
+        <p>Let's change background</p>
+        <button id="btn1">Change Background</button>
+    </div>
+
+    <div class="card" id="box2">
+        <h2 id="h2-2">Change Background</h2>
+        <p>Let's change background</p>
+        <button id="btn2">Change Background</button>
+    </div>
+
+    <div class="card" id="box3">
+        <h2 id="h2-3">Change Background</h2>
+        <p>Let's change background</p>
+        <button id="btn3">Change Background</button>
+    </div>
+
+    <script>
+        const btn1 = document.getElementById("btn1");
+        const h2_1 = document.getElementById("h2-1");
+
+        const btn2 = document.getElementById("btn2");
+        const h2_2 = document.getElementById("h2-2");
+
+        const btn3 = document.getElementById("btn3");
+        const h2_3 = document.getElementById("h2-3");
+
+
+        btn1.addEventListener("click", () => {
+            h2_1.innerText = "The background color is BLUE";
+            h2_2.innerText = "Change Background";
+            h2_3.innerText = "Change Background";
+            document.body.className = "card1";
+            alert("Color is blue");
+        });
+
+
+        btn2.addEventListener("click", () => {
+            h2_1.innerText = "Change Background";
+            h2_2.innerText = "The background color is RED";
+            h2_3.innerText = "Change Background";
+            document.body.className = "card2";
+            alert("Color is red");
+        });
+
+        btn3.addEventListener("click", () => {
+            h2_1.innerText = "Change Background";
+            h2_2.innerText = "Change Background";
+            h2_3.innerText = "The background color is YELLOW";
+            document.body.className = "card3";
+            alert("Color is yellow");
+        });
+    </script>
+</body>
+
+</html>
